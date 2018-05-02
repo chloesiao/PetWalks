@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FindMyPups" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="o2M-eG-6Il">
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                            </mapView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zO-aL-rJO">
+                                <rect key="frame" x="0.0" y="34" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.53777529219317144" green="0.86199238578680204" blue="0.37636076399830282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="PetWalks" id="bxc-u6-k2S">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="0x0-vo-kpS">
+                                            <color key="tintColor" red="0.99380677240000004" green="0.98551329430000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="seachButton:" destination="BYZ-38-t0r" id="6kp-xr-cXT"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.53117634632751132" green="0.86199238580000004" blue="0.37295496075363171" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="o2M-eG-6Il" secondAttribute="bottom" id="WQF-gG-l3W"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o2M-eG-6Il" secondAttribute="trailing" constant="-16" id="Xs4-sj-acL"/>
+                            <constraint firstItem="o2M-eG-6Il" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="kMD-9h-bok"/>
+                            <constraint firstItem="o2M-eG-6Il" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="52" id="xNU-md-Nc9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="o2M-eG-6Il" id="lzg-Bk-RpQ"/>
+                        <outlet property="searchDisplayController" destination="WHb-nu-4ae" id="zjZ-gS-X1F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="5ZQ-97-vln">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="Iqb-oj-76E"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="hOj-cQ-3Le"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="n3z-lx-t9E"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="JTL-pM-8AT"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="WHb-nu-4ae">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="JOy-cl-SR1"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="uEt-ae-g2E"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="Z2s-nm-sER"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="H3W-Lt-2Xl"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+</document>

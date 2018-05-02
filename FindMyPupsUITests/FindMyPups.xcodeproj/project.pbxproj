@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46AFF37B6DA23FE858424E39 /* Pods_FindMyPupsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AA6A89D7691B31D61FB5B1 /* Pods_FindMyPupsTests.framework */; };
+		942E35871F3B9BEC00C93E23 /* FoursquareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E35861F3B9BEC00C93E23 /* FoursquareData.swift */; };
+		942E35891F3BA0C100C93E23 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E35881F3BA0C100C93E23 /* Constant.swift */; };
+		942E358B1F3BB1E100C93E23 /* LocationDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E358A1F3BB1E100C93E23 /* LocationDataStore.swift */; };
+		942E358F1F3DEB3D00C93E23 /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E358E1F3DEB3D00C93E23 /* ChoiceViewController.swift */; };
+		94580C241F3A014A00481532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94580C231F3A014A00481532 /* AppDelegate.swift */; };
+		94580C261F3A014A00481532 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94580C251F3A014A00481532 /* ViewController.swift */; };
+		94580C291F3A014A00481532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94580C271F3A014A00481532 /* Main.storyboard */; };
+		94580C2B1F3A014A00481532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94580C2A1F3A014A00481532 /* Assets.xcassets */; };
+		94580C2E1F3A014A00481532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94580C2C1F3A014A00481532 /* LaunchScreen.storyboard */; };
+		94580C391F3A014A00481532 /* FindMyPupsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94580C381F3A014A00481532 /* FindMyPupsTests.swift */; };
+		94580C441F3A014A00481532 /* FindMyPupsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94580C431F3A014A00481532 /* FindMyPupsUITests.swift */; };
+		94580C521F3A11AF00481532 /* FourSquareAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94580C511F3A11AF00481532 /* FourSquareAPIClient.swift */; };
+		BD2CD6EF5BD6FE75E55ACD58 /* Pods_FindMyPups.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85C4E9D14F0DE7B3FD71F7D /* Pods_FindMyPups.framework */; };
+		D732EF82F4D3F49383D564D8 /* Pods_FindMyPupsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2665EFBE35D15BFB3C1416 /* Pods_FindMyPupsUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94580C351F3A014A00481532 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94580C181F3A014A00481532 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94580C1F1F3A014A00481532;
+			remoteInfo = FindMyPups;
+		};
+		94580C401F3A014A00481532 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94580C181F3A014A00481532 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94580C1F1F3A014A00481532;
+			remoteInfo = FindMyPups;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D6959D45E1A6272E334707F /* Pods-FindMyPupsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyPupsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindMyPupsUITests/Pods-FindMyPupsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1B31EE347718B7466840D701 /* Pods-FindMyPupsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyPupsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindMyPupsUITests/Pods-FindMyPupsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E0EE449BD95FE98DC581B88 /* Pods-FindMyPupsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyPupsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindMyPupsTests/Pods-FindMyPupsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		25F3DEDDA07DA4190949F10F /* Pods-FindMyPups.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyPups.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindMyPups/Pods-FindMyPups.debug.xcconfig"; sourceTree = "<group>"; };
+		567DF32935CE7A19CD41851E /* Pods-FindMyPupsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyPupsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindMyPupsTests/Pods-FindMyPupsTests.release.xcconfig"; sourceTree = "<group>"; };
+		7F2665EFBE35D15BFB3C1416 /* Pods_FindMyPupsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMyPupsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		942E35861F3B9BEC00C93E23 /* FoursquareData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareData.swift; sourceTree = "<group>"; };
+		942E35881F3BA0C100C93E23 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		942E358A1F3BB1E100C93E23 /* LocationDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDataStore.swift; sourceTree = "<group>"; };
+		942E358E1F3DEB3D00C93E23 /* ChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		94580C201F3A014A00481532 /* FindMyPups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyPups.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94580C231F3A014A00481532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94580C251F3A014A00481532 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94580C281F3A014A00481532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94580C2A1F3A014A00481532 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94580C2D1F3A014A00481532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94580C2F1F3A014A00481532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94580C341F3A014A00481532 /* FindMyPupsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyPupsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94580C381F3A014A00481532 /* FindMyPupsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyPupsTests.swift; sourceTree = "<group>"; };
+		94580C3A1F3A014A00481532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94580C3F1F3A014A00481532 /* FindMyPupsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyPupsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94580C431F3A014A00481532 /* FindMyPupsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyPupsUITests.swift; sourceTree = "<group>"; };
+		94580C451F3A014A00481532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94580C511F3A11AF00481532 /* FourSquareAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourSquareAPIClient.swift; sourceTree = "<group>"; };
+		A1524B24F4199701A8987FD3 /* Pods-FindMyPups.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyPups.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindMyPups/Pods-FindMyPups.release.xcconfig"; sourceTree = "<group>"; };
+		C85C4E9D14F0DE7B3FD71F7D /* Pods_FindMyPups.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMyPups.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3AA6A89D7691B31D61FB5B1 /* Pods_FindMyPupsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMyPupsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94580C1D1F3A014A00481532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD2CD6EF5BD6FE75E55ACD58 /* Pods_FindMyPups.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94580C311F3A014A00481532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46AFF37B6DA23FE858424E39 /* Pods_FindMyPupsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94580C3C1F3A014A00481532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D732EF82F4D3F49383D564D8 /* Pods_FindMyPupsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94580C171F3A014A00481532 = {
+			isa = PBXGroup;
+			children = (
+				94580C221F3A014A00481532 /* FindMyPups */,
+				94580C371F3A014A00481532 /* FindMyPupsTests */,
+				94580C421F3A014A00481532 /* FindMyPupsUITests */,
+				94580C211F3A014A00481532 /* Products */,
+				E57CBAF643E85B6E0F057296 /* Pods */,
+				B838DE0932FAF28BC8F3F277 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		94580C211F3A014A00481532 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94580C201F3A014A00481532 /* FindMyPups.app */,
+				94580C341F3A014A00481532 /* FindMyPupsTests.xctest */,
+				94580C3F1F3A014A00481532 /* FindMyPupsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94580C221F3A014A00481532 /* FindMyPups */ = {
+			isa = PBXGroup;
+			children = (
+				94580C231F3A014A00481532 /* AppDelegate.swift */,
+				942E358E1F3DEB3D00C93E23 /* ChoiceViewController.swift */,
+				94580C251F3A014A00481532 /* ViewController.swift */,
+				94580C271F3A014A00481532 /* Main.storyboard */,
+				94580C511F3A11AF00481532 /* FourSquareAPIClient.swift */,
+				942E35881F3BA0C100C93E23 /* Constant.swift */,
+				942E35861F3B9BEC00C93E23 /* FoursquareData.swift */,
+				94580C2A1F3A014A00481532 /* Assets.xcassets */,
+				942E358A1F3BB1E100C93E23 /* LocationDataStore.swift */,
+				94580C2C1F3A014A00481532 /* LaunchScreen.storyboard */,
+				94580C2F1F3A014A00481532 /* Info.plist */,
+			);
+			path = FindMyPups;
+			sourceTree = "<group>";
+		};
+		94580C371F3A014A00481532 /* FindMyPupsTests */ = {
+			isa = PBXGroup;
+			children = (
+				94580C381F3A014A00481532 /* FindMyPupsTests.swift */,
+				94580C3A1F3A014A00481532 /* Info.plist */,
+			);
+			path = FindMyPupsTests;
+			sourceTree = "<group>";
+		};
+		94580C421F3A014A00481532 /* FindMyPupsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				94580C431F3A014A00481532 /* FindMyPupsUITests.swift */,
+				94580C451F3A014A00481532 /* Info.plist */,
+			);
+			path = FindMyPupsUITests;
+			sourceTree = "<group>";
+		};
+		B838DE0932FAF28BC8F3F277 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C85C4E9D14F0DE7B3FD71F7D /* Pods_FindMyPups.framework */,
+				D3AA6A89D7691B31D61FB5B1 /* Pods_FindMyPupsTests.framework */,
+				7F2665EFBE35D15BFB3C1416 /* Pods_FindMyPupsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E57CBAF643E85B6E0F057296 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25F3DEDDA07DA4190949F10F /* Pods-FindMyPups.debug.xcconfig */,
+				A1524B24F4199701A8987FD3 /* Pods-FindMyPups.release.xcconfig */,
+				1E0EE449BD95FE98DC581B88 /* Pods-FindMyPupsTests.debug.xcconfig */,
+				567DF32935CE7A19CD41851E /* Pods-FindMyPupsTests.release.xcconfig */,
+				1B31EE347718B7466840D701 /* Pods-FindMyPupsUITests.debug.xcconfig */,
+				0D6959D45E1A6272E334707F /* Pods-FindMyPupsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94580C1F1F3A014A00481532 /* FindMyPups */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94580C481F3A014A00481532 /* Build configuration list for PBXNativeTarget "FindMyPups" */;
+			buildPhases = (
+				D9FD685C4AFBAB1ECE40AAC8 /* [CP] Check Pods Manifest.lock */,
+				94580C1C1F3A014A00481532 /* Sources */,
+				94580C1D1F3A014A00481532 /* Frameworks */,
+				94580C1E1F3A014A00481532 /* Resources */,
+				83525AE6BF991CA38E948052 /* [CP] Embed Pods Frameworks */,
+				1A6744F4B922F33A5A12E160 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindMyPups;
+			productName = FindMyPups;
+			productReference = 94580C201F3A014A00481532 /* FindMyPups.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94580C331F3A014A00481532 /* FindMyPupsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94580C4B1F3A014A00481532 /* Build configuration list for PBXNativeTarget "FindMyPupsTests" */;
+			buildPhases = (
+				B6EA5052DF1EA1958A95734D /* [CP] Check Pods Manifest.lock */,
+				94580C301F3A014A00481532 /* Sources */,
+				94580C311F3A014A00481532 /* Frameworks */,
+				94580C321F3A014A00481532 /* Resources */,
+				8D14BB47F499E87FD15CDBEB /* [CP] Embed Pods Frameworks */,
+				E23FC55102848A1194B77ECC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94580C361F3A014A00481532 /* PBXTargetDependency */,
+			);
+			name = FindMyPupsTests;
+			productName = FindMyPupsTests;
+			productReference = 94580C341F3A014A00481532 /* FindMyPupsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		94580C3E1F3A014A00481532 /* FindMyPupsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94580C4E1F3A014A00481532 /* Build configuration list for PBXNativeTarget "FindMyPupsUITests" */;
+			buildPhases = (
+				50CF67C2259C1D795371E685 /* [CP] Check Pods Manifest.lock */,
+				94580C3B1F3A014A00481532 /* Sources */,
+				94580C3C1F3A014A00481532 /* Frameworks */,
+				94580C3D1F3A014A00481532 /* Resources */,
+				38B33D0EA09950B6A122A747 /* [CP] Embed Pods Frameworks */,
+				6200A845A04104E40115047B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94580C411F3A014A00481532 /* PBXTargetDependency */,
+			);
+			name = FindMyPupsUITests;
+			productName = FindMyPupsUITests;
+			productReference = 94580C3F1F3A014A00481532 /* FindMyPupsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94580C181F3A014A00481532 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "iD Tech";
+				TargetAttributes = {
+					94580C1F1F3A014A00481532 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = V5Y3X6M4E9;
+						ProvisioningStyle = Automatic;
+					};
+					94580C331F3A014A00481532 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = V5Y3X6M4E9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 94580C1F1F3A014A00481532;
+					};
+					94580C3E1F3A014A00481532 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = V5Y3X6M4E9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 94580C1F1F3A014A00481532;
+					};
+				};
+			};
+			buildConfigurationList = 94580C1B1F3A014A00481532 /* Build configuration list for PBXProject "FindMyPups" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94580C171F3A014A00481532;
+			productRefGroup = 94580C211F3A014A00481532 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94580C1F1F3A014A00481532 /* FindMyPups */,
+				94580C331F3A014A00481532 /* FindMyPupsTests */,
+				94580C3E1F3A014A00481532 /* FindMyPupsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94580C1E1F3A014A00481532 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94580C2E1F3A014A00481532 /* LaunchScreen.storyboard in Resources */,
+				94580C2B1F3A014A00481532 /* Assets.xcassets in Resources */,
+				94580C291F3A014A00481532 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94580C321F3A014A00481532 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94580C3D1F3A014A00481532 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A6744F4B922F33A5A12E160 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FindMyPups/Pods-FindMyPups-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindMyPups/Pods-FindMyPups-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38B33D0EA09950B6A122A747 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindMyPupsUITests/Pods-FindMyPupsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50CF67C2259C1D795371E685 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindMyPupsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6200A845A04104E40115047B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindMyPupsUITests/Pods-FindMyPupsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83525AE6BF991CA38E948052 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FindMyPups/Pods-FindMyPups-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cluster/Cluster.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cluster.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindMyPups/Pods-FindMyPups-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D14BB47F499E87FD15CDBEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindMyPupsTests/Pods-FindMyPupsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6EA5052DF1EA1958A95734D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindMyPupsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9FD685C4AFBAB1ECE40AAC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindMyPups-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E23FC55102848A1194B77ECC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindMyPupsTests/Pods-FindMyPupsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94580C1C1F3A014A00481532 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942E358B1F3BB1E100C93E23 /* LocationDataStore.swift in Sources */,
+				94580C261F3A014A00481532 /* ViewController.swift in Sources */,
+				94580C241F3A014A00481532 /* AppDelegate.swift in Sources */,
+				942E35891F3BA0C100C93E23 /* Constant.swift in Sources */,
+				942E35871F3B9BEC00C93E23 /* FoursquareData.swift in Sources */,
+				94580C521F3A11AF00481532 /* FourSquareAPIClient.swift in Sources */,
+				942E358F1F3DEB3D00C93E23 /* ChoiceViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94580C301F3A014A00481532 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94580C391F3A014A00481532 /* FindMyPupsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94580C3B1F3A014A00481532 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94580C441F3A014A00481532 /* FindMyPupsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94580C361F3A014A00481532 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94580C1F1F3A014A00481532 /* FindMyPups */;
+			targetProxy = 94580C351F3A014A00481532 /* PBXContainerItemProxy */;
+		};
+		94580C411F3A014A00481532 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94580C1F1F3A014A00481532 /* FindMyPups */;
+			targetProxy = 94580C401F3A014A00481532 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94580C271F3A014A00481532 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94580C281F3A014A00481532 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94580C2C1F3A014A00481532 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94580C2D1F3A014A00481532 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94580C461F3A014A00481532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94580C471F3A014A00481532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94580C491F3A014A00481532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25F3DEDDA07DA4190949F10F /* Pods-FindMyPups.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V5Y3X6M4E9;
+				INFOPLIST_FILE = FindMyPups/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iDTech.Chloe.FindMyPups;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		94580C4A1F3A014A00481532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1524B24F4199701A8987FD3 /* Pods-FindMyPups.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V5Y3X6M4E9;
+				INFOPLIST_FILE = FindMyPups/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iDTech.Chloe.FindMyPups;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		94580C4C1F3A014A00481532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E0EE449BD95FE98DC581B88 /* Pods-FindMyPupsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V5Y3X6M4E9;
+				INFOPLIST_FILE = FindMyPupsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iDTech.Chloe.FindMyPupsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyPups.app/FindMyPups";
+			};
+			name = Debug;
+		};
+		94580C4D1F3A014A00481532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 567DF32935CE7A19CD41851E /* Pods-FindMyPupsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V5Y3X6M4E9;
+				INFOPLIST_FILE = FindMyPupsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iDTech.Chloe.FindMyPupsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyPups.app/FindMyPups";
+			};
+			name = Release;
+		};
+		94580C4F1F3A014A00481532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B31EE347718B7466840D701 /* Pods-FindMyPupsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V5Y3X6M4E9;
+				INFOPLIST_FILE = FindMyPupsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iDTech.Chloe.FindMyPupsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FindMyPups;
+			};
+			name = Debug;
+		};
+		94580C501F3A014A00481532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D6959D45E1A6272E334707F /* Pods-FindMyPupsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V5Y3X6M4E9;
+				INFOPLIST_FILE = FindMyPupsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iDTech.Chloe.FindMyPupsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FindMyPups;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94580C1B1F3A014A00481532 /* Build configuration list for PBXProject "FindMyPups" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94580C461F3A014A00481532 /* Debug */,
+				94580C471F3A014A00481532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94580C481F3A014A00481532 /* Build configuration list for PBXNativeTarget "FindMyPups" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94580C491F3A014A00481532 /* Debug */,
+				94580C4A1F3A014A00481532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94580C4B1F3A014A00481532 /* Build configuration list for PBXNativeTarget "FindMyPupsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94580C4C1F3A014A00481532 /* Debug */,
+				94580C4D1F3A014A00481532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94580C4E1F3A014A00481532 /* Build configuration list for PBXNativeTarget "FindMyPupsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94580C4F1F3A014A00481532 /* Debug */,
+				94580C501F3A014A00481532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94580C181F3A014A00481532 /* Project object */;
+}

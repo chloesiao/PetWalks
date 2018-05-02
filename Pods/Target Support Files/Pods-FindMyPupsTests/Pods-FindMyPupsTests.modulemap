@@ -1,0 +1,6 @@
+framework module Pods_FindMyPupsTests {
+  umbrella header "Pods-FindMyPupsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
