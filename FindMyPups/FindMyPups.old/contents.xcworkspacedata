@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:FindMyPups.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AppDelegate.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Assets.xcassets">
+   </FileRef>
+   <FileRef
+      location = "group:Base.lproj">
+   </FileRef>
+   <FileRef
+      location = "group:ChoiceViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Constant.swift">
+   </FileRef>
+   <FileRef
+      location = "group:FourSquareAPIClient.swift">
+   </FileRef>
+   <FileRef
+      location = "group:FoursquareData.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Info.plist">
+   </FileRef>
+   <FileRef
+      location = "group:LocationDataStore.swift">
+   </FileRef>
+   <FileRef
+      location = "group:ViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

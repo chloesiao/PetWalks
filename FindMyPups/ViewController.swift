@@ -26,16 +26,28 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
         let clusterManager = ClusterManager()
         let annotation = Annotation()
-        annotation.coordinate = CLLocationCoordinate2D(latitude: 40.7128, longitude: 74.0059)
+        annotation.coordinate = CLLocationCoordinate2D(latitude: 3, longitude: 2)
         
         //Change later so that it can add markers to the different locations 
         annotation.type = .color(#colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1) , radius: 5)
+        clusterManager.add(annotation)
         
 //        var annotationsTestData = []
         
 //                locationManager = CLLocationManager()
-                locationManager.delegate = self
-                locationManager.requestWhenInUseAuthorization()
+        
+        func startingMapAtMyLocation(coordinate : CLLocationCoordinate2D?){
+            if let coordinate = coordinate{
+                mapView.camera.centerCoordinate = coordinate
+                var region = MKCoordinateRegionMake(coordinate, MKCoordinateSpan(latitudeDelta: -27.104671, longitudeDelta: -109.360481))
+                region.center = coordinate
+                mapView.setRegion(region, animated: true)
+            }
+            mapView.showsUserLocation = true
+        }
+        
+            locationManager.delegate = self
+            locationManager.requestWhenInUseAuthorization()
                 
                 
                 locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -54,7 +66,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
                 print(location)
                 print("just printed location")
-                
+        
                 self.startingMapAtMyLocation(coordinate: location)
                 addFoursquareAnnotations() { count in
                     DispatchQueue.main.async {
@@ -85,7 +97,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             return view
             
         }
-        return nil
+      //  return nil
+  //  }
+    
+        func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        ClusterManager.reload(mapView) { finished in
+            // handle completion
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
@@ -94,19 +112,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
     
 
-    override func didReceiveMemoryWarning() {
+        func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         //Dispose of any resources that can be recreated.
-    }
-    
-    func startingMapAtMyLocation(coordinate : CLLocationCoordinate2D?){
-        if let coordinate = coordinate{
-            mapView.camera.centerCoordinate = coordinate
-            var region = MKCoordinateRegionMake(coordinate, MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
-            region.center = coordinate
-            mapView.setRegion(region, animated: true)
-        }
-        mapView.showsUserLocation = true
     }
     
 
@@ -139,3 +147,4 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 }
 
 
+}
